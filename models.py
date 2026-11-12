@@ -40,7 +40,7 @@ def get_lc_model_client(
         print(f"{function_name}:{base_url},{model}")
     if (debug):
         print(f"{function_name}:{base_url},{model},{api_key}")
-    return ChatOpenAI(api_key=api_key, base_url=base_url, model=model)
+    return ChatOpenAI(api_key=api_key, base_url=base_url, model=model, temperature=temperature)
 
 
 def get_ali_model_client(
